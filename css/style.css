@@ -1,7 +1,18 @@
 .footer{
     text-align: center;
+    padding: 2vw;
 }
 
 .box{
     padding: 3vw;   
+}
+
+.project-box{
+    background-color: #dcdcdc;
+    border-radius: 5px;
+    padding: 1vw;
+}
+
+.project-box-contain{
+    padding: 1vw;
 }
