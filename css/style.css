@@ -16,3 +16,10 @@
 .project-box-contain{
     padding: 1vw;
 }
+
+.cv-box{
+    margin-top: 1vw;
+    background-color: #dcdcdc;
+    border-radius: 5px;
+    padding: 1vw;
+}
