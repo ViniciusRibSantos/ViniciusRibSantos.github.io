@@ -10,18 +10,34 @@ def process_html_content(html_content):
 
     for box in project_boxes:
         project_name_tag = box.find('h2')
-        project_link_tag = box.find('p').find('a')
+        project_p_tag = box.find('p')
+        project_link_tag = project_p_tag.find('a') if project_p_tag else None
 
         if project_name_tag and project_link_tag and project_link_tag.has_attr('href'):
             project_name = project_name_tag.get_text(strip=True)
             project_url = project_link_tag['href']
+
+            # Extract description: Get text content of p tag, then remove the link's text
+            # A more robust way is to get the first text node of P, if available
+            project_description = ""
+            if project_p_tag and project_p_tag.contents:
+                # Iterate through contents to find text nodes before the <a> tag
+                desc_parts = []
+                for content in project_p_tag.contents:
+                    if content.name == 'a':
+                        break
+                    if isinstance(content, str): # NavigableString is a type of str
+                        desc_parts.append(content.strip())
+                project_description = " ".join(filter(None, desc_parts))
+
 
             try:
                 response = requests.get(project_url, timeout=5)
                 if response.status_code == 200:
                     valid_projects.append({
                         'name': project_name,
-                        'url': project_url
+                        'url': project_url,
+                        'description': project_description
                     })
                 else:
                     print(f"URL {project_url} returned status code {response.status_code}", file=sys.stderr)
@@ -72,7 +88,7 @@ def process_html_content(html_content):
       <div class="row project-box-contain">
         <div class="col-12 project-box">
           <h2>{project['name']}</h2>
-          <p>Cotém os exercicios da materia Arquitetura de Software do Bacharelado em Ciencias da Computação. <a
+          <p>{project['description']} <a
               href="{project['url']}"><i class="fas fa-link"></i></a> </p>
         </div>
       </div>"""
