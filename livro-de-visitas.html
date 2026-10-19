@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Home Page do Vinicius Ribeiro, desenvolvedor de software de São Paulo.">
+  <link rel="stylesheet" href="css/retro.css">
+  <title>~*~ Livro de Visitas ~*~ Vinicius Ribeiro</title>
+</head>
+
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="pagina">
+    <header class="topo">
+      <div class="topo-linha">
+        <picture>
+          <source srcset="img/gifs/globo.png" media="(prefers-reduced-motion: reduce)">
+          <img src="img/gifs/globo.gif" width="64" height="64" alt="">
+        </picture>
+        <h1>
+          <picture>
+            <source srcset="img/gifs/titulo.png" media="(prefers-reduced-motion: reduce)">
+            <img src="img/gifs/titulo.gif" width="600" height="96" alt="Vinicius Ribeiro">
+          </picture>
+        </h1>
+        <picture>
+          <source srcset="img/gifs/globo.png" media="(prefers-reduced-motion: reduce)">
+          <img src="img/gifs/globo.gif" width="64" height="64" alt="">
+        </picture>
+      </div>
+      <picture>
+        <source srcset="img/gifs/bem-vindo.png" media="(prefers-reduced-motion: reduce)">
+        <img src="img/gifs/bem-vindo.gif" width="520" height="46" alt="Bem-vindo(a) à minha Home Page!!!">
+      </picture>
+    </header>
+
+    <div class="marquee" role="marquee" aria-label="Avisos">
+      <span>*** Bem-vindo(a) internauta!!! *** Currículo atualizado!!! *** Assine meu Livro de Visitas!!! *** Adicione esta página aos seus Favoritos!!! ***</span>
+    </div>
+
+    <div class="colunas">
+      <nav class="menu-lateral" aria-label="Menu principal">
+        <h2>~ Menu ~</h2>
+        <ul>
+          <li><picture><source srcset="img/gifs/seta.png" media="(prefers-reduced-motion: reduce)"><img src="img/gifs/seta.gif" width="19" height="15" alt=""></picture><a href="index.html">Início</a></li>
+          <li><picture><source srcset="img/gifs/seta.png" media="(prefers-reduced-motion: reduce)"><img src="img/gifs/seta.gif" width="19" height="15" alt=""></picture><a href="cv.html">Currículo</a></li>
+          <li><picture><source srcset="img/gifs/seta.png" media="(prefers-reduced-motion: reduce)"><img src="img/gifs/seta.gif" width="19" height="15" alt=""></picture><a href="projetos.html">Projetos</a></li>
+          <li><picture><source srcset="img/gifs/seta.png" media="(prefers-reduced-motion: reduce)"><img src="img/gifs/seta.gif" width="19" height="15" alt=""></picture><a href="livro-de-visitas.html" aria-current="page">Livro de Visitas</a></li>
+        </ul>
+        <div class="extra">
+          <picture>
+            <source srcset="img/gifs/globo-mini.png" media="(prefers-reduced-motion: reduce)">
+            <img src="img/gifs/globo-mini.gif" width="40" height="40" alt="">
+          </picture>
+          <p>Conectado à<br><span class="arco-iris">World Wide Web</span></p>
+          <p><a href="#" class="favoritos">Adicione aos Favoritos!</a></p>
+        </div>
+      </nav>
+
+      <main class="conteudo" id="conteudo">
+        <picture>
+          <source srcset="img/gifs/livro.png" media="(prefers-reduced-motion: reduce)">
+          <img src="img/gifs/livro.gif" width="148" height="80" alt="">
+        </picture>
+        <h2>Livro de Visitas</h2>
+        <p>Gostou da minha página? Deixe sua assinatura!!!&nbsp;:-D</p>
+
+        <div class="caixa">
+          <form class="form-visitas" action="https://github.com/ViniciusRibSantos/ViniciusRibSantos.github.io/issues/new" data-livro-de-visitas>
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" required maxlength="60">
+            <label for="cidade">Cidade:</label>
+            <input id="cidade" name="cidade" maxlength="60">
+            <label for="origem">Como chegou aqui?</label>
+            <select id="origem" name="origem">
+              <option>Pelo Cadê?</option>
+              <option>Pelo Google</option>
+              <option>Por um amigo</option>
+              <option>Pelo webring</option>
+              <option>Caí de paraquedas</option>
+            </select>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required maxlength="1000"></textarea>
+            <div class="botoes">
+              <button type="submit">Assinar!</button>
+              <button type="reset">Limpar</button>
+            </div>
+          </form>
+          <p class="exemplo">Ao clicar em "Assinar!", abre uma página do GitHub com a sua mensagem já preenchida. É só confirmar por lá. Nada é enviado por este site.</p>
+        </div>
+
+        <picture>
+          <source srcset="img/gifs/arco-iris.png" media="(prefers-reduced-motion: reduce)">
+          <img class="divisoria" src="img/gifs/arco-iris.gif" width="562" height="19" alt="">
+        </picture>
+
+        <h2>Últimas assinaturas</h2>
+        <div class="caixa ciano">
+          <p class="exemplo">(Assinaturas de exemplo, só para dar o clima.)</p>
+          <div class="assinatura">
+            <span class="quem">Juninho_SP</span> - São Paulo, SP - 12/10/2001
+            <p>Mto loka sua página!!! Passa na minha tbm, é no HPG!!! Falow!!!</p>
+          </div>
+          <div class="assinatura">
+            <span class="quem">~*Carol*~</span> - Curitiba, PR - 03/10/2001
+            <p>Adorei os gifs!! Vc pode me ensinar a fazer esse contador??? bjs</p>
+          </div>
+          <div class="assinatura">
+            <span class="quem">Webmaster do Anel dos Devs</span> - 28/09/2001
+            <p>Página aprovada no webring! Seja bem-vindo ao anel. []s</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="rodape">
+      <picture>
+        <source srcset="img/gifs/arco-iris.png" media="(prefers-reduced-motion: reduce)">
+        <img class="divisoria" src="img/gifs/arco-iris.gif" width="562" height="19" alt="">
+      </picture>
+      <p>
+        Você é o visitante nº
+        <span class="contador" data-contador aria-label="Visitantes: 1337"><span>0</span><span>0</span><span>1</span><span>3</span><span>3</span><span>7</span></span>
+      </p>
+      <p>
+        <picture>
+          <source srcset="img/gifs/pombo-correio.png" media="(prefers-reduced-motion: reduce)">
+          <img src="img/gifs/pombo-correio.gif" width="62" height="68" alt="">
+        </picture>
+        <a href="https://www.linkedin.com/in/vinicius-ribeiro-662863136/">Fale comigo pelo LinkedIn!</a>
+      </p>
+      <div class="selos">
+        <a href="https://github.com/ViniciusRibSantos"><img class="selo-88x31" src="img/selos/github.gif" width="88" height="31" alt="Meu GitHub"></a>
+        <a href="https://www.linkedin.com/in/vinicius-ribeiro-662863136/"><img class="selo-88x31" src="img/selos/linkedin.gif" width="88" height="31" alt="Meu LinkedIn"></a>
+        <picture><source srcset="img/selos/netscape.png" media="(prefers-reduced-motion: reduce)"><img class="selo-88x31" src="img/selos/netscape.gif" width="88" height="31" alt="Netscape Now!"></picture>
+        <picture><source srcset="img/selos/800x600.png" media="(prefers-reduced-motion: reduce)"><img class="selo-88x31" src="img/selos/800x600.gif" width="88" height="31" alt="Melhor visualizado em 800x600"></picture>
+        <img class="selo-88x31" src="img/selos/bloco-de-notas.gif" width="88" height="31" alt="Feito com Bloco de Notas">
+        <img class="selo-88x31" src="img/selos/html.gif" width="88" height="31" alt="HTML 4.01 válido!">
+        <img class="selo-88x31" src="img/selos/feito-no-brasil.gif" width="88" height="31" alt="Feito no Brasil">
+      </div>
+      <p class="webring">
+        <a href="https://github.com/ViniciusRibSantos">&lt;&lt; Anterior</a> |
+        Anel dos Devs Brasileiros |
+        <a href="https://www.linkedin.com/in/vinicius-ribeiro-662863136/">Próximo &gt;&gt;</a>
+      </p>
+      <p>Melhor visualizado em 800x600 com Netscape Navigator 4</p>
+      <p class="atualizacao">Última atualização: 19/10/2001</p>
+    </footer>
+  </div>
+
+  <script src="js/retro.js"></script>
+</body>
+
+</html>

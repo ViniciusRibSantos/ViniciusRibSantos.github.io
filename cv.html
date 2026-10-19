@@ -4,140 +4,197 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
-  <title>CV · Vinicius Ribeiro</title>
+  <meta name="description" content="Home Page do Vinicius Ribeiro, desenvolvedor de software de São Paulo.">
+  <link rel="stylesheet" href="css/retro.css">
+  <title>~*~ Meu Currículo ~*~ Vinicius Ribeiro</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">ViniciusRibSantos</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="cv.html">CV</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projetos.html">Meus Projetos</a>
-          </li>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="pagina">
+    <header class="topo">
+      <div class="topo-linha">
+        <picture>
+          <source srcset="img/gifs/globo.png" media="(prefers-reduced-motion: reduce)">
+          <img src="img/gifs/globo.gif" width="64" height="64" alt="">
+        </picture>
+        <h1>
+          <picture>
+            <source srcset="img/gifs/titulo.png" media="(prefers-reduced-motion: reduce)">
+            <img src="img/gifs/titulo.gif" width="600" height="96" alt="Vinicius Ribeiro">
+          </picture>
+        </h1>
+        <picture>
+          <source srcset="img/gifs/globo.png" media="(prefers-reduced-motion: reduce)">
+          <img src="img/gifs/globo.gif" width="64" height="64" alt="">
+        </picture>
+      </div>
+      <picture>
+        <source srcset="img/gifs/bem-vindo.png" media="(prefers-reduced-motion: reduce)">
+        <img src="img/gifs/bem-vindo.gif" width="520" height="46" alt="Bem-vindo(a) à minha Home Page!!!">
+      </picture>
+    </header>
+
+    <div class="marquee" role="marquee" aria-label="Avisos">
+      <span>*** Bem-vindo(a) internauta!!! *** Currículo atualizado!!! *** Assine meu Livro de Visitas!!! *** Adicione esta página aos seus Favoritos!!! ***</span>
+    </div>
+
+    <div class="colunas">
+      <nav class="menu-lateral" aria-label="Menu principal">
+        <h2>~ Menu ~</h2>
+        <ul>
+          <li><picture><source srcset="img/gifs/seta.png" media="(prefers-reduced-motion: reduce)"><img src="img/gifs/seta.gif" width="19" height="15" alt=""></picture><a href="index.html">Início</a></li>
+          <li><picture><source srcset="img/gifs/seta.png" media="(prefers-reduced-motion: reduce)"><img src="img/gifs/seta.gif" width="19" height="15" alt=""></picture><a href="cv.html" aria-current="page">Currículo</a></li>
+          <li><picture><source srcset="img/gifs/seta.png" media="(prefers-reduced-motion: reduce)"><img src="img/gifs/seta.gif" width="19" height="15" alt=""></picture><a href="projetos.html">Projetos</a></li>
+          <li><picture><source srcset="img/gifs/seta.png" media="(prefers-reduced-motion: reduce)"><img src="img/gifs/seta.gif" width="19" height="15" alt=""></picture><a href="livro-de-visitas.html">Livro de Visitas</a></li>
         </ul>
-      </div>
-    </div>
-  </nav>
+        <div class="extra">
+          <picture>
+            <source srcset="img/gifs/globo-mini.png" media="(prefers-reduced-motion: reduce)">
+            <img src="img/gifs/globo-mini.gif" width="40" height="40" alt="">
+          </picture>
+          <p>Conectado à<br><span class="arco-iris">World Wide Web</span></p>
+          <p><a href="#" class="favoritos">Adicione aos Favoritos!</a></p>
+        </div>
+      </nav>
 
-  <main>
-    <div class="container">
-      <div class="cv-section">
-
-        <div class="cv-header">
-          <h1>Vinicius Ribeiro</h1>
-          <p>Desenvolvedor de Software · São Paulo, Brasil</p>
-          <div class="cv-header-links">
-            <a href="https://www.linkedin.com/in/vinicius-ribeiro-662863136/">
-              <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/ViniciusRibSantos">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </div>
+      <main class="conteudo" id="conteudo">
+        <div class="cv-secao">
+          <picture>
+            <source srcset="img/gifs/diploma.png" media="(prefers-reduced-motion: reduce)">
+            <img src="img/gifs/diploma.gif" width="86" height="60" alt="">
+          </picture>
+          <h2>Meu Currículo</h2>
         </div>
 
-        <div class="cv-block">
+        <div class="caixa cv-cabecalho">
+          <p class="nome">Vinicius Ribeiro</p>
+          <p>Desenvolvedor de Software · São Paulo, Brasil
+            <picture>
+              <source srcset="img/gifs/bandeira-brasil.png" media="(prefers-reduced-motion: reduce)">
+              <img src="img/gifs/bandeira-brasil.gif" width="68" height="50" alt="Bandeira do Brasil">
+            </picture>
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/vinicius-ribeiro-662863136/">LinkedIn</a> |
+            <a href="https://github.com/ViniciusRibSantos">GitHub</a>
+          </p>
+        </div>
+
+        <picture>
+          <source srcset="img/gifs/fogo.png" media="(prefers-reduced-motion: reduce)">
+          <img class="divisoria" src="img/gifs/fogo.gif" width="571" height="40" alt="">
+        </picture>
+
+        <div class="cv-secao">
+          <picture>
+            <source srcset="img/gifs/maleta.png" media="(prefers-reduced-motion: reduce)">
+            <img src="img/gifs/maleta.gif" width="71" height="90" alt="">
+          </picture>
           <h2>Experiência</h2>
+        </div>
 
-          <div class="timeline-item">
-            <div class="role">Desenvolvedor de Software</div>
-            <div class="company">Ituran Brasil</div>
-            <div class="period">
-              <i class="fas fa-calendar-alt"></i> março de 2023 – Presente
-              &nbsp;·&nbsp;
-              <i class="fas fa-map-marker-alt"></i> São Paulo, Brasil
-            </div>
-            <p class="description">Atuei na melhoria contínua de produtos de software, criando e refatorando APIs em .NET (C#) e SQL Server, utilizando Git para o versionamento de código.</p>
+        <div class="caixa">
+          <div class="cv-item">
+            <div class="cargo">Desenvolvedor de Software</div>
+            <div class="empresa">Ituran Brasil</div>
+            <div class="periodo">março de 2023 – Presente · São Paulo, Brasil</div>
+            <p>Atuei na melhoria contínua de produtos de software, criando e refatorando APIs em .NET (C#) e SQL Server, utilizando Git para o versionamento de código.</p>
           </div>
 
-          <div class="timeline-item">
-            <div class="role">Desenvolvedor de Software</div>
-            <div class="company">JSL S.A.</div>
-            <div class="period">
-              <i class="fas fa-calendar-alt"></i> dezembro de 2020 – março de 2023
-              &nbsp;·&nbsp;
-              <i class="fas fa-map-marker-alt"></i> Mogi das Cruzes, São Paulo
-            </div>
-            <p class="description">Participei ativamente da transformação digital desenvolvendo software, implementando APIs e funcionalidades com Angular, .NET em C#, e Banco de Dados Oracle, utilizando Git para controle de versão.</p>
+          <div class="cv-item">
+            <div class="cargo">Desenvolvedor de Software</div>
+            <div class="empresa">JSL S.A.</div>
+            <div class="periodo">dezembro de 2020 – março de 2023 · Mogi das Cruzes, São Paulo</div>
+            <p>Participei ativamente da transformação digital desenvolvendo software, implementando APIs e funcionalidades com Angular, .NET em C#, e Banco de Dados Oracle, utilizando Git para controle de versão.</p>
           </div>
 
-          <div class="timeline-item">
-            <div class="role">Desenvolvedor de Software</div>
-            <div class="company">Qintess</div>
-            <div class="period">
-              <i class="fas fa-calendar-alt"></i> maio de 2018 – dezembro de 2020
-              &nbsp;·&nbsp;
-              <i class="fas fa-map-marker-alt"></i> São Paulo e Região, Brasil
-            </div>
-            <p class="description">Estive alocado no Banco Itaú, apoiando diretamente o negócio. Desenvolvi funcionalidades e automações com o uso de .NET e SQL Server, o que otimizou a eficiência da área de negócios.</p>
+          <div class="cv-item">
+            <div class="cargo">Desenvolvedor de Software</div>
+            <div class="empresa">Qintess</div>
+            <div class="periodo">maio de 2018 – dezembro de 2020 · São Paulo e Região, Brasil</div>
+            <p>Estive alocado no Banco Itaú, apoiando diretamente o negócio. Desenvolvi funcionalidades e automações com o uso de .NET e SQL Server, o que otimizou a eficiência da área de negócios.</p>
           </div>
 
-          <div class="timeline-item">
-            <div class="role">Estagiário</div>
-            <div class="company">Secretaria do Verde e Meio Ambiente</div>
-            <div class="period">
-              <i class="fas fa-calendar-alt"></i> setembro de 2017 – maio de 2018
-              &nbsp;·&nbsp;
-              <i class="fas fa-map-marker-alt"></i> São Paulo
-            </div>
-            <p class="description">Durante meu estágio, estive envolvido nos esforços de modernização de processos da Secretaria do Verde e Meio Ambiente de São Paulo. Construí sites usando o framework Bootstrap com tecnologias como HTML, CSS e JavaScript.</p>
+          <div class="cv-item">
+            <div class="cargo">Estagiário</div>
+            <div class="empresa">Secretaria do Verde e Meio Ambiente</div>
+            <div class="periodo">setembro de 2017 – maio de 2018 · São Paulo</div>
+            <p>Durante meu estágio, estive envolvido nos esforços de modernização de processos da Secretaria do Verde e Meio Ambiente de São Paulo. Construí sites usando o framework Bootstrap com tecnologias como HTML, CSS e JavaScript.</p>
           </div>
         </div>
 
-        <div class="cv-block">
+        <picture>
+          <source srcset="img/gifs/arco-iris.png" media="(prefers-reduced-motion: reduce)">
+          <img class="divisoria" src="img/gifs/arco-iris.gif" width="562" height="19" alt="">
+        </picture>
+
+        <div class="cv-secao">
+          <picture>
+            <source srcset="img/gifs/livro.png" media="(prefers-reduced-motion: reduce)">
+            <img src="img/gifs/livro.gif" width="148" height="80" alt="">
+          </picture>
           <h2>Formação Acadêmica</h2>
+        </div>
 
-          <div class="timeline-item">
-            <div class="role">Bacharelado em Ciências da Computação</div>
-            <div class="company">Universidade São Judas Tadeu</div>
-            <div class="period">
-              <i class="fas fa-calendar-alt"></i> 2017 – 2020
-            </div>
+        <div class="caixa verde">
+          <div class="cv-item">
+            <div class="cargo">Bacharelado em Ciências da Computação</div>
+            <div class="empresa">Universidade São Judas Tadeu</div>
+            <div class="periodo">2017 – 2020</div>
           </div>
 
-          <div class="timeline-item">
-            <div class="role">Técnico em Informática</div>
-            <div class="company">Etec Itaquaquecetuba</div>
-            <div class="period">
-              <i class="fas fa-calendar-alt"></i> 2014 – 2016
-            </div>
+          <div class="cv-item">
+            <div class="cargo">Técnico em Informática</div>
+            <div class="empresa">Etec Itaquaquecetuba</div>
+            <div class="periodo">2014 – 2016</div>
           </div>
         </div>
 
+        <p class="nao-imprimir">
+          <picture><source srcset="img/gifs/impressora.png" media="(prefers-reduced-motion: reduce)"><img src="img/gifs/impressora.gif" width="39" height="28" alt=""></picture>
+          <a href="#" onclick="window.print(); return false;" class="titulo-neon">Imprimir esta página</a>
+        </p>
+      </main>
+    </div>
+
+    <footer class="rodape">
+      <picture>
+        <source srcset="img/gifs/arco-iris.png" media="(prefers-reduced-motion: reduce)">
+        <img class="divisoria" src="img/gifs/arco-iris.gif" width="562" height="19" alt="">
+      </picture>
+      <p>
+        Você é o visitante nº
+        <span class="contador" data-contador aria-label="Visitantes: 1337"><span>0</span><span>0</span><span>1</span><span>3</span><span>3</span><span>7</span></span>
+      </p>
+      <p>
+        <picture>
+          <source srcset="img/gifs/pombo-correio.png" media="(prefers-reduced-motion: reduce)">
+          <img src="img/gifs/pombo-correio.gif" width="62" height="68" alt="">
+        </picture>
+        <a href="https://www.linkedin.com/in/vinicius-ribeiro-662863136/">Fale comigo pelo LinkedIn!</a>
+      </p>
+      <div class="selos">
+        <a href="https://github.com/ViniciusRibSantos"><img class="selo-88x31" src="img/selos/github.gif" width="88" height="31" alt="Meu GitHub"></a>
+        <a href="https://www.linkedin.com/in/vinicius-ribeiro-662863136/"><img class="selo-88x31" src="img/selos/linkedin.gif" width="88" height="31" alt="Meu LinkedIn"></a>
+        <picture><source srcset="img/selos/netscape.png" media="(prefers-reduced-motion: reduce)"><img class="selo-88x31" src="img/selos/netscape.gif" width="88" height="31" alt="Netscape Now!"></picture>
+        <picture><source srcset="img/selos/800x600.png" media="(prefers-reduced-motion: reduce)"><img class="selo-88x31" src="img/selos/800x600.gif" width="88" height="31" alt="Melhor visualizado em 800x600"></picture>
+        <img class="selo-88x31" src="img/selos/bloco-de-notas.gif" width="88" height="31" alt="Feito com Bloco de Notas">
+        <img class="selo-88x31" src="img/selos/html.gif" width="88" height="31" alt="HTML 4.01 válido!">
+        <img class="selo-88x31" src="img/selos/feito-no-brasil.gif" width="88" height="31" alt="Feito no Brasil">
       </div>
-    </div>
-  </main>
+      <p class="webring">
+        <a href="https://github.com/ViniciusRibSantos">&lt;&lt; Anterior</a> |
+        Anel dos Devs Brasileiros |
+        <a href="https://www.linkedin.com/in/vinicius-ribeiro-662863136/">Próximo &gt;&gt;</a>
+      </p>
+      <p>Melhor visualizado em 800x600 com Netscape Navigator 4</p>
+      <p class="atualizacao">Última atualização: 19/10/2001</p>
+    </footer>
+  </div>
 
-  <footer class="footer">
-    <div class="container">
-      <a href="https://www.linkedin.com/in/vinicius-ribeiro-662863136/">
-        <i class="fab fa-linkedin fa-2x"></i>
-      </a>
-      <a href="https://github.com/ViniciusRibSantos">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/retro.js"></script>
 </body>
 
 </html>

@@ -1,25 +1,28 @@
-# Personal Portfolio Website
+# Home Page do Vinicius
 
-This repository contains the source code for the personal portfolio website of ViniciusRibSantos.
+Portfólio pessoal de ViniciusRibSantos com cara de home page dos anos 2000, no estilo GeoCities/HPG:
+GIFs animados, fundo de estrelas, faixa rolante, contador de visitas, livro de visitas, webring e selos 88×31.
 
-## Website Structure
+## Páginas
 
-The website is organized into the following HTML files:
+- `index.html`: página inicial ("Quem sou eu?", atalhos e novidades).
+- `cv.html`: currículo com experiência profissional e formação acadêmica.
+- `projetos.html`: projetos com links para os repositórios.
+- `livro-de-visitas.html`: livro de visitas. O botão "Assinar!" abre uma issue no GitHub já preenchida.
 
-- `index.html`: The main landing page, providing a welcome message and navigation to other sections.
-- `cv.html`: Displays the Curriculum Vitae of ViniciusRibSantos, including professional experience and academic background.
-- `projetos.html`: Showcases various projects developed by ViniciusRibSantos, with links to their respective repositories or live versions.
+## Tecnologias
 
-## Technologies Used
+HTML e CSS puros, mais um JavaScript pequeno e opcional (`js/retro.js`) para o contador, o rastro de estrelinhas
+do cursor e o livro de visitas. Sem frameworks, sem build e sem requisições externas.
 
-The website is built using the following technologies:
+- Estilos: `css/retro.css`
+- GIFs: `img/gifs/` (origem de cada um em `img/gifs/CREDITOS.md`) e selos em `img/selos/`
+- Spec do redesign: `docs/spec-redesign-anos-2000.md`
 
-- HTML
-- CSS
-- Bootstrap
+Quem tem "reduzir movimento" ativado no sistema vê a página sem animações: os GIFs são trocados pelos `.png`
+estáticos de mesmo nome.
 
-## How to View the Website
+## Como ver o site
 
-To view the website, simply clone this repository and open the `index.html` file in your web browser.
-
-Alternatively, you can access the live version of the website [here](https://viniciusribsantos.github.io/Portfolio/).
+Abra o `index.html` no navegador, ou acesse a versão publicada em
+[viniciusribsantos.github.io](https://viniciusribsantos.github.io/).

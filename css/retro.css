@@ -1,0 +1,627 @@
+/* =====================================================
+   Home Page do Vinicius - estilo internet anos 2000
+   Feito a mao, sem frameworks, como manda a tradicao!
+   ===================================================== */
+
+:root {
+  --bg: #000000;
+  --content-bg: #FFFFCC;
+  --text: #000000;
+  --text-on-dark: #FFFFFF;
+  --link: #0000FF;
+  --visited: #800080;
+  --active: #FF0000;
+  --neon-verde: #00FF00;
+  --neon-rosa: #FF00FF;
+  --neon-ciano: #00FFFF;
+  --neon-amarelo: #FFFF00;
+  --menu-bg: #000066;
+  --fonte-corpo: "Times New Roman", Times, serif;
+  --fonte-titulo: "Comic Sans MS", "Comic Neue", "Chalkboard SE", cursive;
+  --fonte-menu: Verdana, Arial, sans-serif;
+  --fonte-mono: "Courier New", Courier, monospace;
+}
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 12px 8px 24px;
+  background: var(--bg) url("../img/gifs/estrelas.gif") repeat;
+  color: var(--text-on-dark);
+  font-family: var(--fonte-corpo);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+a {
+  color: var(--link);
+}
+
+a:visited {
+  color: var(--visited);
+}
+
+a:active {
+  color: var(--active);
+}
+
+a:focus-visible {
+  outline: 2px dotted currentColor;
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+hr {
+  border: 0;
+  height: 4px;
+  background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, magenta);
+  margin: 16px 0;
+}
+
+.pular-conteudo {
+  position: absolute;
+  left: -9999px;
+}
+
+.pular-conteudo:focus {
+  left: 8px;
+  top: 8px;
+  background: var(--neon-amarelo);
+  color: #000;
+  padding: 4px 8px;
+  z-index: 10;
+}
+
+/* ---------- Estrutura ---------- */
+.pagina {
+  width: 760px;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 3px ridge var(--neon-rosa);
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.topo {
+  text-align: center;
+  padding: 10px 8px 4px;
+}
+
+.topo h1 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.topo-linha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.titulo-neon {
+  font-family: var(--fonte-titulo);
+  color: var(--neon-amarelo);
+  text-shadow: 3px 3px 0 var(--neon-rosa);
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.colunas {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  border-top: 3px ridge var(--neon-rosa);
+}
+
+/* ---------- Faixa rolante ---------- */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #000080;
+  border-top: 2px solid var(--neon-ciano);
+  border-bottom: 2px solid var(--neon-ciano);
+  color: var(--neon-verde);
+  font-family: var(--fonte-mono);
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: rolar 22s linear infinite;
+}
+
+@keyframes rolar {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* ---------- Menu lateral ---------- */
+.menu-lateral {
+  background: var(--menu-bg);
+  border-right: 3px ridge var(--neon-rosa);
+  padding: 10px 8px;
+  font-family: var(--fonte-menu);
+  font-size: 13px;
+  text-align: center;
+}
+
+.menu-lateral h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--neon-verde);
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+  text-align: left;
+}
+
+.menu-lateral li {
+  margin: 6px 0;
+}
+
+.menu-lateral li img {
+  width: 14px;
+  margin-right: 4px;
+}
+
+.menu-lateral a,
+.menu-lateral a:visited {
+  color: var(--neon-ciano);
+  font-weight: bold;
+}
+
+.menu-lateral a:hover {
+  color: var(--neon-amarelo);
+}
+
+.menu-lateral a[aria-current="page"] {
+  color: var(--neon-amarelo);
+  text-decoration: none;
+}
+
+.menu-lateral a[aria-current="page"]::after {
+  content: " ◄";
+  color: var(--neon-rosa);
+}
+
+.menu-lateral p {
+  margin: 8px 0;
+  color: var(--text-on-dark);
+}
+
+/* ---------- Conteudo ---------- */
+.conteudo {
+  padding: 12px;
+  text-align: center;
+  min-width: 0;
+}
+
+.conteudo h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--neon-amarelo);
+  text-shadow: 2px 2px 0 var(--neon-rosa);
+  font-size: 24px;
+  margin: 12px 0 8px;
+}
+
+.caixa {
+  background: var(--content-bg);
+  color: var(--text);
+  border: 4px double var(--neon-rosa);
+  padding: 10px 14px;
+  margin: 10px auto;
+  text-align: left;
+}
+
+.caixa h3 {
+  font-family: var(--fonte-titulo);
+  color: #CC0000;
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.caixa p {
+  margin: 6px 0;
+}
+
+.caixa.ciano {
+  border-color: var(--neon-ciano);
+}
+
+.caixa.verde {
+  border-color: var(--neon-verde);
+}
+
+.centro {
+  text-align: center;
+}
+
+.divisoria {
+  display: block;
+  margin: 12px auto;
+}
+
+.arco-iris {
+  background: linear-gradient(90deg, #FF0000, #FF9900, #FFFF00, #00FF00, #00FFFF, #FF00FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.pisca {
+  animation: piscar 1s steps(1, end) infinite;
+}
+
+@keyframes piscar {
+  50% {
+    visibility: hidden;
+  }
+}
+
+/* Links grandes da home */
+.atalhos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 12px 0;
+}
+
+.atalhos a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--fonte-titulo);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--neon-ciano);
+}
+
+.atalhos a:visited {
+  color: var(--neon-ciano);
+}
+
+.atalhos a:hover {
+  color: var(--neon-amarelo);
+}
+
+/* Novidades */
+.novidades {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.novidades li {
+  margin: 6px 0;
+}
+
+.novidades .data {
+  font-family: var(--fonte-mono);
+  font-size: 14px;
+  color: #006600;
+}
+
+/* ---------- CV ---------- */
+.cv-cabecalho {
+  text-align: center;
+}
+
+.cv-cabecalho .nome {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cv-secao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cv-item .cargo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.cv-item .empresa {
+  font-style: italic;
+  font-size: 17px;
+}
+
+.cv-item .periodo {
+  font-family: var(--fonte-mono);
+  font-size: 14px;
+  color: #333;
+}
+
+.cv-item + .cv-item {
+  border-top: 2px dashed var(--neon-rosa);
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/* ---------- Projetos ---------- */
+.projetos {
+  width: 100%;
+  border-collapse: separate;
+  border: 3px outset var(--neon-ciano);
+  background: var(--content-bg);
+  color: var(--text);
+  text-align: left;
+}
+
+.projetos th,
+.projetos td {
+  border: 2px inset var(--neon-ciano);
+  padding: 8px;
+  vertical-align: middle;
+}
+
+.projetos th {
+  background: #000080;
+  color: var(--neon-amarelo);
+  font-family: var(--fonte-menu);
+}
+
+.projetos td:first-child {
+  width: 48px;
+  text-align: center;
+}
+
+/* ---------- Livro de visitas ---------- */
+.form-visitas {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px 10px;
+  align-items: center;
+}
+
+.form-visitas label {
+  font-weight: bold;
+  text-align: right;
+}
+
+.form-visitas input,
+.form-visitas select,
+.form-visitas textarea {
+  font-family: var(--fonte-mono);
+  font-size: 14px;
+  border: 2px inset #999;
+  padding: 3px;
+  width: 100%;
+}
+
+.form-visitas .botoes {
+  grid-column: 2;
+}
+
+.form-visitas button {
+  font-family: var(--fonte-menu);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 4px 14px;
+  border: 3px outset #CCC;
+  background: #CCC;
+  cursor: pointer;
+}
+
+.form-visitas button:active {
+  border-style: inset;
+}
+
+.assinatura {
+  border-bottom: 1px dashed #999;
+  padding: 6px 0;
+}
+
+.assinatura:last-child {
+  border-bottom: 0;
+}
+
+.assinatura .quem {
+  font-weight: bold;
+  color: #000080;
+}
+
+.exemplo {
+  font-size: 13px;
+  color: #444;
+  font-style: italic;
+}
+
+/* ---------- Rodape ---------- */
+.rodape {
+  border-top: 3px ridge var(--neon-rosa);
+  text-align: center;
+  padding: 10px 8px 14px;
+  font-family: var(--fonte-menu);
+  font-size: 13px;
+}
+
+.rodape p {
+  margin: 8px 0;
+}
+
+.rodape a,
+.rodape a:visited {
+  color: var(--neon-ciano);
+}
+
+.contador {
+  display: inline-flex;
+  gap: 2px;
+  vertical-align: middle;
+  padding: 2px;
+  background: #333;
+  border: 2px inset #999;
+}
+
+.contador span {
+  display: inline-block;
+  width: 16px;
+  background: #000;
+  color: var(--neon-verde);
+  font-family: var(--fonte-mono);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.selos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.selo-88x31 {
+  width: 88px;
+  height: 31px;
+  image-rendering: pixelated;
+}
+
+.webring {
+  font-weight: bold;
+  color: var(--neon-amarelo);
+}
+
+.atualizacao {
+  font-family: var(--fonte-mono);
+  color: #CCCCCC;
+}
+
+/* Rastro de estrelinhas do cursor */
+.brilho {
+  position: fixed;
+  pointer-events: none;
+  z-index: 100;
+  color: var(--neon-amarelo);
+  font-size: 14px;
+  animation: brilhar 0.7s linear forwards;
+}
+
+@keyframes brilhar {
+  to {
+    opacity: 0;
+    transform: translateY(14px) scale(0.4);
+  }
+}
+
+/* ---------- Telas pequenas (nao existiam em 2001!) ---------- */
+@media (max-width: 780px) {
+  .colunas {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-lateral {
+    border-right: 0;
+    border-bottom: 3px ridge var(--neon-rosa);
+  }
+
+  .menu-lateral ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 14px;
+    margin-bottom: 0;
+  }
+
+  .menu-lateral .extra {
+    display: none;
+  }
+
+  .form-visitas {
+    grid-template-columns: 1fr;
+  }
+
+  .form-visitas label {
+    text-align: left;
+  }
+
+  .form-visitas .botoes {
+    grid-column: 1;
+  }
+}
+
+/* ---------- Movimento reduzido ---------- */
+@media (prefers-reduced-motion: reduce) {
+  body {
+    background-image: url("../img/gifs/estrelas.png");
+  }
+
+  .marquee span {
+    animation: none;
+    padding-left: 0;
+    white-space: normal;
+  }
+
+  .marquee {
+    white-space: normal;
+    text-align: center;
+  }
+
+  .pisca {
+    animation: none;
+  }
+
+  .brilho {
+    display: none;
+  }
+}
+
+/* ---------- Impressao ---------- */
+@media print {
+  body {
+    background: #FFF;
+    color: #000;
+  }
+
+  .pagina {
+    border: 0;
+    background: #FFF;
+  }
+
+  .topo,
+  .marquee,
+  .menu-lateral,
+  .rodape,
+  .divisoria,
+  .nao-imprimir {
+    display: none;
+  }
+
+  .colunas {
+    display: block;
+    border: 0;
+  }
+
+  .conteudo h2 {
+    color: #000;
+    text-shadow: none;
+  }
+
+  .caixa {
+    border: 0;
+    background: #FFF;
+  }
+}

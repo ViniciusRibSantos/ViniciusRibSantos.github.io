@@ -4,67 +4,166 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Vinicius Ribeiro</title>
+  <meta name="description" content="Home Page do Vinicius Ribeiro, desenvolvedor de software de São Paulo.">
+  <link rel="stylesheet" href="css/retro.css">
+  <title>~*~ Home Page do Vinicius ~*~</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">ViniciusRibSantos</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html"><i class="fas fa-home"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cv.html">CV</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projetos.html">Meus Projetos</a>
-          </li>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="pagina">
+    <header class="topo">
+      <div class="topo-linha">
+        <picture>
+          <source srcset="img/gifs/globo.png" media="(prefers-reduced-motion: reduce)">
+          <img src="img/gifs/globo.gif" width="64" height="64" alt="">
+        </picture>
+        <h1>
+          <picture>
+            <source srcset="img/gifs/titulo.png" media="(prefers-reduced-motion: reduce)">
+            <img src="img/gifs/titulo.gif" width="600" height="96" alt="Vinicius Ribeiro">
+          </picture>
+        </h1>
+        <picture>
+          <source srcset="img/gifs/globo.png" media="(prefers-reduced-motion: reduce)">
+          <img src="img/gifs/globo.gif" width="64" height="64" alt="">
+        </picture>
+      </div>
+      <picture>
+        <source srcset="img/gifs/bem-vindo.png" media="(prefers-reduced-motion: reduce)">
+        <img src="img/gifs/bem-vindo.gif" width="520" height="46" alt="Bem-vindo(a) à minha Home Page!!!">
+      </picture>
+    </header>
+
+    <div class="marquee" role="marquee" aria-label="Avisos">
+      <span>*** Bem-vindo(a) internauta!!! *** Currículo atualizado!!! *** Assine meu Livro de Visitas!!! *** Adicione esta página aos seus Favoritos!!! ***</span>
+    </div>
+
+    <div class="colunas">
+      <nav class="menu-lateral" aria-label="Menu principal">
+        <h2>~ Menu ~</h2>
+        <ul>
+          <li><picture><source srcset="img/gifs/seta.png" media="(prefers-reduced-motion: reduce)"><img src="img/gifs/seta.gif" width="19" height="15" alt=""></picture><a href="index.html" aria-current="page">Início</a></li>
+          <li><picture><source srcset="img/gifs/seta.png" media="(prefers-reduced-motion: reduce)"><img src="img/gifs/seta.gif" width="19" height="15" alt=""></picture><a href="cv.html">Currículo</a></li>
+          <li><picture><source srcset="img/gifs/seta.png" media="(prefers-reduced-motion: reduce)"><img src="img/gifs/seta.gif" width="19" height="15" alt=""></picture><a href="projetos.html">Projetos</a></li>
+          <li><picture><source srcset="img/gifs/seta.png" media="(prefers-reduced-motion: reduce)"><img src="img/gifs/seta.gif" width="19" height="15" alt=""></picture><a href="livro-de-visitas.html">Livro de Visitas</a></li>
         </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="hero">
-    <div class="hero-glow"></div>
-    <div class="container">
-      <div class="hero-content">
-        <p class="hero-greeting">Olá, sou</p>
-        <h1>Vinicius Ribeiro</h1>
-        <p class="hero-subtitle">Desenvolvedor de Software</p>
-        <p class="hero-desc">Descubra mais sobre os meus projetos e minha carreira profissional.</p>
-        <div class="hero-buttons">
-          <a href="projetos.html" class="btn-primary-custom">Ver Projetos</a>
-          <a href="cv.html" class="btn-outline-custom">Ver CV</a>
+        <div class="extra">
+          <picture>
+            <source srcset="img/gifs/globo-mini.png" media="(prefers-reduced-motion: reduce)">
+            <img src="img/gifs/globo-mini.gif" width="40" height="40" alt="">
+          </picture>
+          <p>Conectado à<br><span class="arco-iris">World Wide Web</span></p>
+          <p><a href="#" class="favoritos">Adicione aos Favoritos!</a></p>
         </div>
+      </nav>
+
+      <main class="conteudo" id="conteudo">
+        <h2>Quem sou eu?</h2>
+        <div class="caixa">
+          <p>Olá internauta!!! Seja muito bem-vindo(a) à minha home page! :-)</p>
+          <p>Eu sou o <b>Vinicius Ribeiro</b>, <b>Desenvolvedor de Software</b> de São Paulo, Brasil.
+            Trabalho criando APIs e sistemas com .NET (C#), SQL Server, Angular e muito café.</p>
+          <p>Aqui você descobre mais sobre os meus projetos e a minha carreira profissional.
+            Fique à vontade, a casa é sua!</p>
+        </div>
+
+        <picture>
+          <source srcset="img/gifs/fogo.png" media="(prefers-reduced-motion: reduce)">
+          <img class="divisoria" src="img/gifs/fogo.gif" width="571" height="40" alt="">
+        </picture>
+
+        <h2>Navegue pela página!</h2>
+        <div class="atalhos">
+          <a href="cv.html">
+            <picture>
+              <source srcset="img/gifs/maleta.png" media="(prefers-reduced-motion: reduce)">
+              <img src="img/gifs/maleta.gif" width="71" height="90" alt="">
+            </picture>
+            Meu Currículo
+          </a>
+          <a href="projetos.html">
+            <picture>
+              <source srcset="img/gifs/computadores.png" media="(prefers-reduced-motion: reduce)">
+              <img src="img/gifs/computadores.gif" width="107" height="35" alt="">
+            </picture>
+            Meus Projetos
+          </a>
+          <a href="livro-de-visitas.html">
+            <picture>
+              <source srcset="img/gifs/livro.png" media="(prefers-reduced-motion: reduce)">
+              <img src="img/gifs/livro.gif" width="148" height="80" alt="">
+            </picture>
+            Livro de Visitas
+          </a>
+        </div>
+
+        <picture>
+          <source srcset="img/gifs/arco-iris.png" media="(prefers-reduced-motion: reduce)">
+          <img class="divisoria" src="img/gifs/arco-iris.gif" width="562" height="19" alt="">
+        </picture>
+
+        <h2>Novidades</h2>
+        <div class="caixa ciano">
+          <ul class="novidades">
+            <li>
+              <picture>
+                <source srcset="img/gifs/novo.png" media="(prefers-reduced-motion: reduce)">
+                <img src="img/gifs/novo.gif" width="52" height="20" alt="Novo:">
+              </picture>
+              <span class="data">19/10/2001</span> - Página toda reformada! Agora com mais GIFs!!!
+            </li>
+            <li>
+              <picture>
+                <source srcset="img/gifs/novo.png" media="(prefers-reduced-motion: reduce)">
+                <img src="img/gifs/novo.gif" width="52" height="20" alt="Novo:">
+              </picture>
+              <span class="data">15/10/2001</span> - Inaugurado o <a href="livro-de-visitas.html">Livro de Visitas</a>. Assine!
+            </li>
+            <li><span class="data">01/10/2001</span> - <a href="cv.html">Currículo</a> atualizado.</li>
+            <li><span class="data">20/09/2001</span> - Nova seção de <a href="projetos.html">Projetos</a>.</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+
+    <footer class="rodape">
+      <picture>
+        <source srcset="img/gifs/arco-iris.png" media="(prefers-reduced-motion: reduce)">
+        <img class="divisoria" src="img/gifs/arco-iris.gif" width="562" height="19" alt="">
+      </picture>
+      <p>
+        Você é o visitante nº
+        <span class="contador" data-contador aria-label="Visitantes: 1337"><span>0</span><span>0</span><span>1</span><span>3</span><span>3</span><span>7</span></span>
+      </p>
+      <p>
+        <picture>
+          <source srcset="img/gifs/pombo-correio.png" media="(prefers-reduced-motion: reduce)">
+          <img src="img/gifs/pombo-correio.gif" width="62" height="68" alt="">
+        </picture>
+        <a href="https://www.linkedin.com/in/vinicius-ribeiro-662863136/">Fale comigo pelo LinkedIn!</a>
+      </p>
+      <div class="selos">
+        <a href="https://github.com/ViniciusRibSantos"><img class="selo-88x31" src="img/selos/github.gif" width="88" height="31" alt="Meu GitHub"></a>
+        <a href="https://www.linkedin.com/in/vinicius-ribeiro-662863136/"><img class="selo-88x31" src="img/selos/linkedin.gif" width="88" height="31" alt="Meu LinkedIn"></a>
+        <picture><source srcset="img/selos/netscape.png" media="(prefers-reduced-motion: reduce)"><img class="selo-88x31" src="img/selos/netscape.gif" width="88" height="31" alt="Netscape Now!"></picture>
+        <picture><source srcset="img/selos/800x600.png" media="(prefers-reduced-motion: reduce)"><img class="selo-88x31" src="img/selos/800x600.gif" width="88" height="31" alt="Melhor visualizado em 800x600"></picture>
+        <img class="selo-88x31" src="img/selos/bloco-de-notas.gif" width="88" height="31" alt="Feito com Bloco de Notas">
+        <img class="selo-88x31" src="img/selos/html.gif" width="88" height="31" alt="HTML 4.01 válido!">
+        <img class="selo-88x31" src="img/selos/feito-no-brasil.gif" width="88" height="31" alt="Feito no Brasil">
       </div>
-    </div>
-  </section>
+      <p class="webring">
+        <a href="https://github.com/ViniciusRibSantos">&lt;&lt; Anterior</a> |
+        Anel dos Devs Brasileiros |
+        <a href="https://www.linkedin.com/in/vinicius-ribeiro-662863136/">Próximo &gt;&gt;</a>
+      </p>
+      <p>Melhor visualizado em 800x600 com Netscape Navigator 4</p>
+      <p class="atualizacao">Última atualização: 19/10/2001</p>
+    </footer>
+  </div>
 
-  <footer class="footer">
-    <div class="container">
-      <a href="https://www.linkedin.com/in/vinicius-ribeiro-662863136/">
-        <i class="fab fa-linkedin fa-2x"></i>
-      </a>
-      <a href="https://github.com/ViniciusRibSantos">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/retro.js"></script>
 </body>
 
 </html>
